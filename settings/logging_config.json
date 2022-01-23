@@ -1,0 +1,11 @@
+{
+  "logger": {
+    "path": "logs/",
+    "filename": "access.log",
+    "level": "info",
+    "rotation": "7 days",
+    "retention": "7 months",
+    "default_loggers_to_change": ["uvicorn", "uvicorn.access", "fastapi"],
+    "format": "<level>{level: <8}</level> <green>{time:YYYY-MM-DD HH:mm:ss.SSS}</green> request id: {extra[request_id]} - <cyan>{name}</cyan>:<cyan>{function}</cyan> - <level>{message}</level>"
+  }
+}
