@@ -28,7 +28,7 @@ class ComputerInfo(BaseModel):
 
 class FigTimeline(BaseModel):
     dates_msec_freq: DatetimeIndex
-    date_sec_daily: DatetimeIndex
+    date_sec_freq: DatetimeIndex
     dates_str: list
     base_datetime: list
 
